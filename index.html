@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilder — a photo slideshow for a television</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 2rem 1.25rem; max-width: 42rem;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-weight: 500; font-size: 2rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-weight: 500; font-size: 1.2rem; margin-top: 2.5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(128,128,128,.3); opacity: .75; font-size: .92rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Bilder</h1>
+<p class="sub">A photographic slideshow for a Samsung television, and a phone app to start it.</p>
+
+<h2>What it is</h2>
+<p>
+  Bilder is a private, non-commercial application built for one household. It shows
+  a family photograph collection on a television in the living room, with the
+  caption written under each picture, and it is operated from a phone by somebody
+  in their nineties. It is not distributed, not sold, and not available in any
+  app store.
+</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Shows photographs from a Google&nbsp;Photos album on a Samsung&nbsp;TV, one at a time, with their descriptions.</li>
+  <li>Plays video files from a USB drive connected to the television.</li>
+  <li>Wakes the television over the local network and starts the slideshow, from a phone on the same network.</li>
+</ul>
+
+<h2>The Google account data it uses</h2>
+<p>
+  Bilder requests a single scope,
+  <code>photoslibrary.readonly.appcreateddata</code>. That scope grants read access
+  <em>only</em> to media the application itself created — it cannot see the rest of
+  the library. In practice this is the album uploaded by the household's own
+  companion tool, and nothing else.
+</p>
+<p>
+  It reads album names, photograph descriptions, and the temporary URLs needed to
+  display the images. It never writes, deletes, shares or uploads anything.
+</p>
+
+<h2>Where the data goes</h2>
+<p>
+  To the television on the home network, and nowhere else. There is no server, no
+  account, no analytics and no third party. See the
+  <a href="privacy.html">privacy policy</a> for the detail.
+</p>
+
+<footer>
+  <a href="privacy.html">Privacy policy</a> &middot;
+  <a href="terms.html">Terms of service</a>
+</footer>
+
+</body>
+</html>
